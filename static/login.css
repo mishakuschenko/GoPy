@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #eaf2fd, #dcecfb);
+}
+
+.container {
+    max-width: 400px;
+    width: 90%;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    color: #000;
+    backdrop-filter: blur(15px);
+    background: rgba(255, 255, 255, 0.85);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 24px;
+}
+
+.form-group {
+    display: block;
+    width: 80%;
+    margin: auto;
+    margin-top: 16px;
+}
+
+label {
+    display: inline-block;
+    font-weight: bold;
+    margin-right: 12px;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: calc(100% - 60px);
+    padding: 8px 12px;
+    outline: none;
+    border: none;
+    appearance: none;
+    transition: all 0.3s ease-in-out;
+    caret-color: black;
+    resize: none;
+    overflow-y: hidden;
+    line-height: normal;
+    vertical-align: middle;
+    cursor: text;
+    user-select: text !important;
+    z-index: 9999;
+    opacity: 1;
+    filter: alpha(opacity=100);
+    font-style: inherit;
+    letter-spacing: inherit;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    -webkit-appearance: none !important;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+input:focus {
+    border-bottom: solid 2px #007BFF;
+}
+
+button {
+    padding: 10px 20px;
+    font-weight: bold;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    transition: transform 0.3s;
+    margin: auto;
+    cursor: pointer;
+    margin-top: 36px;
+    border-radius: 5px;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p {
+    margin-top: 15px;
+}
