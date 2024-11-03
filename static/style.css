@@ -5,50 +5,138 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f9f9f9;
     color: #333;
     line-height: 1.6;
 }
 
-.header {
-    background: linear-gradient(to right, #2193b0, #6dd5ed);
+a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    background-color: #007BFF;
     color: white;
     text-align: center;
-    padding: 50px 20px;
+    padding: 10px 0;
 }
 
-.header h1 {
-    margin: 0;
+footer {
+    background-color: #2F4F4F;
+    color: white;
+    text-align: center;
+    padding: 10px 10px;
+    position: fixed;
+    bottom: 10;
+    width: 100%;
 }
 
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 26px;
+    margin-top: 35px;
+    margin-bottom: 25px;
+}
+
+p {
+    margin-bottom: 0px;
+}
+
+ol {
+    list-style-type: decimal;
+    padding-left: 45px;
+}
+
+li {
+    margin-bottom: 12px;
+}
+
+/* Стили для основного содержимого */
 .main {
-    max-width: 800px;
-    margin: 40px auto;
-    overflow: hidden;
-}
-
-.content {
+    max-width: 900px;
+    margin: 60px auto;
     padding: 30px;
-    border: 1px solid #ccc;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background: white;
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
 }
 
 .content h2 {
-    text-align: center;
+    margin-top: 0;
 }
 
+.content p {
+    font-size: 18px;
+}
+
+.content a {
+    color: #007BFF;
+}
+
+.content a:hover {
+    text-decoration: underline;
+}
+
+/* Стили для футера */
 .footer {
-    text-align: center;
-    height: 40px;
-    width: 100%;
-    background: #696969;/*#343a40;*/
     position: fixed;
     bottom: 0;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 14px;
+}
+
+/* Дополнительные улучшения */
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+
+.header h1 {
+    font-weight: bold;
 }
 
 .footer p {
-    line-height: 40px;
+    font-size: 16px;
+}
+
+.footer a {
     color: white;
+}
+
+.footer a:hover {
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+/* Анимации */
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+body {
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Улучшения для списка */
+ol li {
+    transition: all 0.3s ease;
+}
+
+ol li:hover {
+    transform: translateX(5px);
+    color: #555;
 }
