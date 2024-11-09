@@ -6,9 +6,7 @@ import (
 )
 
 func main() {
-	/*                 -------------------------------            */
-	log.Println("all is good! \n\n       --> http://localhost:8080")
-	/*                 -------------------------------            */
+	log.Println("all is good!\n--> http://localhost:8080")
 	app.Run()
 }
 
